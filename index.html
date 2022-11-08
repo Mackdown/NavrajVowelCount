@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BY NAVRAJ (MAK)</title>
+</head>
+<body>
+	<script>
+		function go(){
+			var str=document.getElementById("t1").value;
+			var vowel= "aeiouAEIOU";
+			var ctr=0;
+
+			for(var x=0;x<str.length;x++){
+				for(var y=0;y<vowel.length;y++){
+					if(str[x]==vowel[y])
+					{
+						ctr++;	
+					}
+				}
+			}
+			document.getElementById("p1").innerHTML="Vowels = "+ ctr;
+		}
+	</script>
+	<table>
+		<tr>
+			<td>
+				Input
+			</td>
+			<td><input type"text" id= "t1" name=""></td<
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" value="Find out # of vowels!" onclick="go()"></td>
+		</tr>
+	</table>
+	<p id="p1"></p>
+</body>
+</html>
